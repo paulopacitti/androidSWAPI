@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Film implements Serializable
 {
@@ -54,6 +55,17 @@ public class Film implements Serializable
 
     public String getProducer() {
         return producer;
+    }
+
+    @Override
+    public String toString()
+    {
+        return title + "\n"
+                + "Episode: " + episodeId + "\n"
+                + "Director: " + director + "\n"
+                + "Producer: " + producer + "\n"
+                + "Release date: " + releaseDate.toString() + "\n"
+                + "Opening crawl: \n" + openingCrawl;
     }
 
     public void setProducer(String producer) {
@@ -126,8 +138,17 @@ public class Film implements Serializable
     public String created;
     public String edited;
 
-    @SerializedName("species")
-    public ArrayList<String> speciesUrls;
+    public String getReleaseDate()
+    {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    @SerializedName("release_date")
+    public String releaseDate;
 
     @SerializedName("starships")
     public ArrayList<String> starshipsUrls;
@@ -140,4 +161,7 @@ public class Film implements Serializable
 
     @SerializedName("characters")
     public ArrayList<String> charactersUrls;
+
+    @SerializedName("species")
+    public ArrayList<String> speciesUrls;
 }

@@ -8,28 +8,78 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.paulopacitti.starwarswiki.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/colorPrimary">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/edSearch"
-        android:hint="Search for the character" />
+    <ImageView
+        android:layout_width="285dp"
+        android:layout_height="114dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:layout_weight="0.22"
+        android:layout_marginTop="20dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Search"
-        android:id="@+id/btnSearch"
+        android:text="Films"
+        android:id="@+id/btnFilm"
         android:layout_gravity="center_horizontal"
-        android:onClick="btnSearch_onClick" />
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:textColor="@color/colorPrimary"
+        android:onClick="btnFilm_onClick" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/txtResult"
-        android:layout_marginTop="30dp" />
+        android:text="People"
+        android:id="@+id/btnPeople"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="btnPeople_onClick" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Planets"
+        android:id="@+id/btnPlanet"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Species"
+        android:id="@+id/btnSpecie"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Starships"
+        android:id="@+id/btnStarship"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Vehicles"
+        android:id="@+id/btnVehicle"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorPrimary" />
 </LinearLayout>

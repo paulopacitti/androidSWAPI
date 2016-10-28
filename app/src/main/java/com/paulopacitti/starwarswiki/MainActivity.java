@@ -1,27 +1,20 @@
 package com.paulopacitti.starwarswiki;
 
-import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
-import java.util.List;
-
-import rest.*;
-import models.*;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity
 {
-    EditText edSearch;
-    TextView txtResult;
-    Button btnSearch;
+
+    Button btnFilm;
+    Button btnPeople;
+    Button btnPlanet;
+    Button btnSpecie;
+    Button btnStarship;
+    Button btnVehicle;
 
 
     @Override
@@ -30,42 +23,23 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        edSearch = (EditText) findViewById(R.id.edSearch);
-        txtResult = (TextView) findViewById(R.id.txtResult);
-        btnSearch = (Button) findViewById(R.id.btnSearch);
-
+        btnFilm = (Button) findViewById(R.id.btnFilm);
+        btnPeople = (Button) findViewById(R.id.btnPeople);
+        btnPlanet = (Button) findViewById(R.id.btnSpecie);
+        btnSpecie = (Button) findViewById(R.id.btnStarship);
+        btnStarship = (Button) findViewById(R.id.btnStarship);
+        btnVehicle = (Button) findViewById(R.id.btnVehicle);
     }
 
-    public void btnSearch_onClick(View v)
+    public void btnPeople_onClick(View v)
     {
-        searchPeople(edSearch.getText().toString());
+        Intent i = new Intent(MainActivity.this, SearchPeople.class);
+        startActivity(i);
     }
 
-    private void searchPeople(String tagword)
+    public void btnFilm_onClick(View v)
     {
-
-        Call<People> call = APIClient.get().getPeople(tagword);
-
-        call.enqueue(new Callback<People>()
-        {
-            @Override
-            public void onFailure(Call<People> call, Throwable t)
-            {
-                Log.d("APIPlug", "Error Occured: " + t.getMessage());
-            }
-
-            @Override
-            public void onResponse(Call<People> call, Response<People> response)
-            {
-
-
-                Log.d("APIPlug", "Successfully response fetched" );
-
-                People people = response.body();
-
-                txtResult.setText(people.toString());
-
-            }
-        });
+        Intent i = new Intent(MainActivity.this, SearchFilms.class);
+        startActivity(i);
     }
 }
