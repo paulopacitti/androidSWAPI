@@ -64,6 +64,20 @@ public class Specie implements Serializable
         return averageLifespan;
     }
 
+    @Override
+    public String toString()
+    {
+        return name + "\n"
+                + "Classification: " + classification + "\n"
+                + "Designation: " + designation + "\n"
+                + "Average height: " + averageHeight + "\n"
+                + "Average lifespan: " + averageLifespan + "\n"
+                + "Eye colors: " + eyeColors + "\n"
+                + "Hair colors: " + hairColors + "\n"
+                + "Skin colors: " + skinColors + "\n"
+                + "Language: " + language;
+    }
+
     public void setAverageLifespan(String averageLifespan) {
         this.averageLifespan = averageLifespan;
     }

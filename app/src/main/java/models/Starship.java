@@ -21,6 +21,24 @@ public class Starship extends Vehicle implements Serializable
         this.starshipClass = starshipClass;
     }
 
+    @Override
+    public String toString() {
+        return name + "\n"
+                + "Model: " + model + "\n"
+                + "Classification: " +starshipClass + "\n"
+                + "Manufacturer: " + manufacturer + "\n"
+                + "Cost(galactic credits): " + costInCredits + "\n"
+                + "Length: " + length + "\n"
+                + "Crew: " + crew + "\n"
+                + "Passengers: " + passengers + "\n"
+                + "Max atmosphering speed: " + maxAtmospheringSpeed + "\n"
+                + "Hyperdrive rating: " + hyperdriveRating + "\n"
+                + "MGLT(max speed in megalights/hour: " + mglt + "\n"
+                + "Cargo capacity(kg): " + cargoCapacity + "\n"
+                + "Consumables: " + consumables;
+
+    }
+
     public String getHyperdriveRating() {
         return hyperdriveRating;
     }

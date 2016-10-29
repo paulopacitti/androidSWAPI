@@ -37,6 +37,30 @@ public class MainActivity extends AppCompatActivity
         startActivity(i);
     }
 
+    public void btnPlanet_onClick(View v)
+    {
+        Intent i = new Intent(MainActivity.this, SearchPlanets.class);
+        startActivity(i);
+    }
+
+    public void btnStarship_onClick(View v)
+    {
+        Intent i = new Intent(MainActivity.this, SearchStarships.class);
+        startActivity(i);
+    }
+
+    public void btnVehicle_onClick(View v)
+    {
+        Intent i = new Intent(MainActivity.this, SearchVehicles.class);
+        startActivity(i);
+    }
+
+    public void btnSpecie_onClick(View v)
+    {
+        Intent i = new Intent(MainActivity.this, SearchSpecies.class);
+        startActivity(i);
+    }
+
     public void btnFilm_onClick(View v)
     {
         Intent i = new Intent(MainActivity.this, SearchFilms.class);

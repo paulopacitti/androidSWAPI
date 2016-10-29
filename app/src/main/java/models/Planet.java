@@ -138,6 +138,18 @@ public class Planet implements Serializable
     @SerializedName("orbital_period")
     public String orbitalPeriod;
 
+    @Override
+    public String toString() {
+        return name + "\n"
+                + "Diameter: " + diameter + "\n"
+                + "Rotation period(day period): " + rotationPeriod + "\n"
+                + "Gravity: " + gravity +"\n"
+                + "Population: " + population + "\n"
+                + "Climate: " + climate + "\n"
+                + "Terrain: " + terrain + "\n"
+                + "Surface of water(percentage): " + surfaceWater;
+    }
+
     @SerializedName("surface_water")
     public String surfaceWater;
 

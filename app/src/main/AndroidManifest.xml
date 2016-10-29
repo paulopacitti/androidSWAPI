@@ -7,8 +7,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:label="SWAPI"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <uses-permission android:name="android.permission.INTERNET" />
@@ -20,7 +20,27 @@
         </activity>
 
         <activity
+            android:name=".SearchPlanets"
+            android:noHistory="false">
+        </activity>
+
+        <activity
+            android:name=".SearchStarships"
+            android:noHistory="false">
+        </activity>
+
+        <activity
+            android:name=".SearchVehicles"
+            android:noHistory="false">
+        </activity>
+
+        <activity
             android:name=".SearchFilms"
+            android:noHistory="false">
+        </activity>
+
+        <activity
+            android:name=".SearchSpecies"
             android:noHistory="false">
         </activity>
 

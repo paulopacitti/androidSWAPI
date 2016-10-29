@@ -58,8 +58,10 @@ public class People implements Serializable {
         return name + "\n"
                 + "Birth Year: " + birthYear +"\n"
                 + "Gender: " + gender + "\n"
-                + "Hair Color: " + hairColor +"\n"
-                + "Height: " + height;
+                + "Hair color: " + hairColor +"\n"
+                + "Height: " + height + "\n"
+                + "Mass: " + mass + "\n"
+                + "Skin color: " + skinColor + " \n";
     }
 
     public void setHairColor(String hairColor) {

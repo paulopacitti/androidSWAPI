@@ -166,4 +166,19 @@ public class Vehicle implements Serializable
 
     @SerializedName("films")
     public ArrayList<String> filmsUrls;
+
+    @Override
+    public String toString()
+    {
+        return name + "\n"
+                + "Model: " + model + "\n"
+                + "Manufacturer: " + manufacturer + "\n"
+                + "Cost(galactic credits): " + costInCredits + "\n"
+                + "Length: " + length + "\n"
+                + "Crew: " + crew + "\n"
+                + "Passengers: " + passengers + "\n"
+                + "Max atmosphering speed: " + maxAtmospheringSpeed + "\n"
+                + "Cargo capacity(kg): " + cargoCapacity + "\n"
+                + "Consumables: " + consumables;
+    }
 }

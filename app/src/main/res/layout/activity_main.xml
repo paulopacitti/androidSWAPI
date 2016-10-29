@@ -51,7 +51,8 @@
         android:layout_gravity="center_horizontal"
         android:background="#ffffff"
         android:layout_marginTop="3dp"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:onClick="btnPlanet_onClick" />
 
     <Button
         android:layout_width="200dp"
@@ -61,7 +62,8 @@
         android:layout_gravity="center_horizontal"
         android:background="#ffffff"
         android:layout_marginTop="3dp"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:onClick="btnSpecie_onClick" />
 
     <Button
         android:layout_width="200dp"
@@ -71,7 +73,8 @@
         android:layout_gravity="center_horizontal"
         android:background="#ffffff"
         android:layout_marginTop="3dp"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:onClick="btnStarship_onClick" />
 
     <Button
         android:layout_width="200dp"
@@ -81,5 +84,6 @@
         android:layout_gravity="center_horizontal"
         android:background="#ffffff"
         android:layout_marginTop="3dp"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:onClick="btnVehicle_onClick" />
 </LinearLayout>
