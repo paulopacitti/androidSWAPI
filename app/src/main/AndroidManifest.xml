@@ -16,34 +16,22 @@
 
         <activity
             android:name=".SearchPeople"
-            android:noHistory="false">
-        </activity>
-
+            android:noHistory="false"></activity>
         <activity
             android:name=".SearchPlanets"
-            android:noHistory="false">
-        </activity>
-
+            android:noHistory="false"></activity>
         <activity
             android:name=".SearchStarships"
-            android:noHistory="false">
-        </activity>
-
+            android:noHistory="false"></activity>
         <activity
             android:name=".SearchVehicles"
-            android:noHistory="false">
-        </activity>
-
+            android:noHistory="false"></activity>
         <activity
             android:name=".SearchFilms"
-            android:noHistory="false">
-        </activity>
-
+            android:noHistory="false"></activity>
         <activity
             android:name=".SearchSpecies"
-            android:noHistory="false">
-        </activity>
-
+            android:noHistory="false"></activity>
         <activity
             android:name=".Splash"
             android:noHistory="true"
@@ -59,6 +47,7 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Help"></activity>
     </application>
 
 </manifest>

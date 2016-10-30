@@ -25,6 +25,7 @@ public class SearchPeople extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        setTitle("People");
         setContentView(R.layout.activity_people);
 
         edSearch = (EditText) findViewById(R.id.edSearch);

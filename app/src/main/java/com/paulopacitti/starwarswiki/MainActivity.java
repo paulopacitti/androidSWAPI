@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity
     Button btnSpecie;
     Button btnStarship;
     Button btnVehicle;
+
+    ImageView imgHelp;
 
 
     @Override
@@ -29,6 +32,8 @@ public class MainActivity extends AppCompatActivity
         btnSpecie = (Button) findViewById(R.id.btnStarship);
         btnStarship = (Button) findViewById(R.id.btnStarship);
         btnVehicle = (Button) findViewById(R.id.btnVehicle);
+
+        imgHelp = (ImageView) findViewById(R.id.imgHelp);
     }
 
     public void btnPeople_onClick(View v)
@@ -66,4 +71,12 @@ public class MainActivity extends AppCompatActivity
         Intent i = new Intent(MainActivity.this, SearchFilms.class);
         startActivity(i);
     }
+
+    public void imgHelp_onClick(View v)
+    {
+        Intent i = new Intent(MainActivity.this, Help.class);
+        startActivity(i);
+    }
+
+
 }

@@ -33,7 +33,7 @@ public class Starship extends Vehicle implements Serializable
                 + "Passengers: " + passengers + "\n"
                 + "Max atmosphering speed: " + maxAtmospheringSpeed + "\n"
                 + "Hyperdrive rating: " + hyperdriveRating + "\n"
-                + "MGLT(max speed in megalights/hour: " + mglt + "\n"
+                + "MGLT(max speed in megalights/hour): " + mglt + "\n"
                 + "Cargo capacity(kg): " + cargoCapacity + "\n"
                 + "Consumables: " + consumables;
 

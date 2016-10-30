@@ -26,6 +26,7 @@ public class SearchFilms extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        setTitle("Films");
         setContentView(R.layout.activity_films);
 
         edSearch = (EditText) findViewById(R.id.edSearch);

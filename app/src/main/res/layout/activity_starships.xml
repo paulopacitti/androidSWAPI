@@ -8,6 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SearchStarships"
+    android:label="Starships"
     android:orientation="vertical">
 
     <EditText
@@ -26,11 +27,14 @@
         android:layout_gravity="center_horizontal"
         android:onClick="btnSearch_onClick" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
     <HorizontalScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/horizontalScrollView" >
-
+        android:fillViewport="true" >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,5 +43,6 @@
             android:layout_marginTop="30dp"
             android:paddingBottom="10dip" />
     </HorizontalScrollView>
+    </ScrollView>
 
 </LinearLayout>

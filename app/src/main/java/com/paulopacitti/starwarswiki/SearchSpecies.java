@@ -26,6 +26,7 @@ public class SearchSpecies extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        setTitle("Species");
         setContentView(R.layout.activity_species);
 
         edSearch = (EditText) findViewById(R.id.edSearch);

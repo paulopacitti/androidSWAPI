@@ -7,16 +7,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:label="Films"
     tools:context=".SearchFilms"
     android:orientation="vertical">
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="351dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/edSearch"
         android:hint="Search for the title" />
+
 
     <Button
         android:layout_width="wrap_content"
@@ -29,9 +31,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        android:fillViewport="false"
-        android:layout_marginBottom="10dp">
+        android:fillViewport="true" >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,6 +43,9 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/txtResult"
             android:layout_marginTop="30dp"
-            android:paddingBottom="10dip" />
+            android:paddingBottom="10dip"
+            android:focusableInTouchMode="false" />
+    </HorizontalScrollView>
     </ScrollView>
+
 </LinearLayout>

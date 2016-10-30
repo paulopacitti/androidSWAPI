@@ -26,6 +26,7 @@ public class SearchVehicles extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        setTitle("Vehicles");
         setContentView(R.layout.activity_vehicles);
 
         edSearch = (EditText) findViewById(R.id.edSearch);

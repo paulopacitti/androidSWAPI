@@ -26,6 +26,7 @@ public class SearchStarships extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        setTitle("Starships");
         setContentView(R.layout.activity_starships);
 
         edSearch = (EditText) findViewById(R.id.edSearch);
