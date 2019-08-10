@@ -1,11 +1,11 @@
-#SWAPI :star2: - (Desafio TagView)
+# SWAPI :star2: - (Desafio TagView)
 
-- It's a simple(really simple! :apple:) Star Wars wiki app for Android. Uses the [SWAPI](https://swapi.co/)(Star Wars API) made 
+- It's a simple(really simple! :apple:) Star Wars wiki app for Android. Uses the [SWAPI](https://swapi.co/)(Star Wars API) made
 by Paul Hallet and [Retrofit](https://square.github.io/retrofit/). The app was built in Android Studio.
 
 ![wookie](http://i.imgur.com/WkROMoo.jpg "wookie")
 
-##Sections
+## Sections
 
 - You can acess Films :movie_camera:, People :alien:, Planets :earth_asia:, Species :blowfish:, Starships :rocket: and Vehicles :police_car: from Star Wars Universe;
 - **Films** :movie_camera:: access the title, episode id, the opening crawl, director, producer and  release date of the movie;
@@ -15,6 +15,6 @@ by Paul Hallet and [Retrofit](https://square.github.io/retrofit/). The app was b
 - **Starships** :rocket:: access the name, model, class, manufacturer, cost(in *galactic credits*), length, crew, passengers, maximum speed in the atmosphere, the hyperdrive rating, MGLT(Maximum number of *Megalights* this starship can travel in a standard hour), the cargo capacity and consumables of that starship;
 - **Vehicles** :police_car:: access name, model, class, manufacturer, cost(in *galactic credits*), length, crew, passengers, maximum speed in the atmosphere, the cargo capacity and consumables of that starship;
 
-##Download
+## Download
 
 - You can download the .apk in the releases section. Have fun!
